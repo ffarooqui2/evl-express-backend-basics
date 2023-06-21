@@ -1,3 +1,5 @@
+/* to run, type node server.js */
+
 // need to requre the http library
 const http = require("http");
 const fs = require("fs"); // all the file handling
