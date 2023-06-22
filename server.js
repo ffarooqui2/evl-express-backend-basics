@@ -8,13 +8,13 @@ app.get('/table', (req, res) => {
   res.sendFile(__dirname + "/public/pages/table.html")
 })
 
+const userRouter = require('./routes/apps')
+app.use('/apps', userRouter)
+
 // Catch all route for unknown URLs
 app.use((req, res) => {
   res.status(404).send('404 Not Found');
 });
-
-const userRouter = require('./routes/apps')
-app.use('/apps', userRouter)
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
