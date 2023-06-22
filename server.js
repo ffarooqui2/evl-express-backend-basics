@@ -5,7 +5,7 @@ app.use(express.static(__dirname + "/public"))
 
 app.get('/app', (req, res) => {
   console.log("You've reached table")
-  res.sendFile(__dirname + "/public/table.html")
+  res.sendFile(__dirname + "/public/pages/table.html")
 })
 
 app.listen(PORT, () => {
