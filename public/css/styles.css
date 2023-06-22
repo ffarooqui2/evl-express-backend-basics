@@ -5,4 +5,8 @@
     background-color: grey;
     border-radius: 25px;
     cursor: pointer;
+ 
+}
+.padding {
+    padding: 50px 50px 50px 50px; 
 }
