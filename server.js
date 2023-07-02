@@ -11,8 +11,8 @@ app.get('/movies', (req, res) => {
 const userRouter = require('./routes/apps')
 app.use('/apps', userRouter)
 
-const movieRouter = require('./routes/movie')
-app.use('/movie', movieRouter)
+const movieSearchRouter = require('./routes/movie')
+app.use('/search', movieSearchRouter)
 
 // Catch all route for unknown URLs
 app.use((req, res) => {

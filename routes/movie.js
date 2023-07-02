@@ -1,9 +1,13 @@
 const express = require('express')
 const router = express.Router()
 
-// supposed to get the name of a movie
-router.get("?:name", (req, res) =>{
-    console.log(req.params.name)
+router.get('/', (req, res) => {
+    console.log(req.query);
+    return res.json({
+        message: 'Hello World',
+        name: req.query.name,
+        age: req.query.age
+    })
 })
 
-module.exports = router
+module.exports = router 
